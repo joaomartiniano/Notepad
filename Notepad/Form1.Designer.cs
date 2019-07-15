@@ -88,12 +88,14 @@
             this.MenuFormGuardar.Name = "MenuFormGuardar";
             this.MenuFormGuardar.Size = new System.Drawing.Size(180, 22);
             this.MenuFormGuardar.Text = "&Guardar";
+            this.MenuFormGuardar.Click += new System.EventHandler(this.MenuFormGuardar_Click);
             // 
             // MenuFormGuardarComo
             // 
             this.MenuFormGuardarComo.Name = "MenuFormGuardarComo";
             this.MenuFormGuardarComo.Size = new System.Drawing.Size(180, 22);
             this.MenuFormGuardarComo.Text = "Guardar &Como...";
+            this.MenuFormGuardarComo.Click += new System.EventHandler(this.MenuFormGuardarComo_Click);
             // 
             // toolStripMenuItem1
             // 

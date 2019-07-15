@@ -80,6 +80,81 @@ namespace Notepad
         }
 
         /// <summary>
+        /// Guardar o ficheiro atual.
+        /// </summary>
+        private void MenuFormGuardar_Click(object sender, EventArgs e)
+        {
+            Guardar();
+        }
+
+        /// <summary>
+        /// Guardar o ficheiro atual, especificando um nome e localização.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MenuFormGuardarComo_Click(object sender, EventArgs e)
+        {
+            GuardarComo();
+        }
+
+        /// <summary>
+        /// Guardar o ficheiro atual.
+        /// </summary>
+        private void Guardar()
+        {
+            // Se o ficheiro ainda não foi guardado, executar o método GuardarComo()
+            if ((nomeFicheiro == string.Empty) || (localFicheiro == string.Empty))
+            {
+                GuardarComo();
+            }
+            else
+            {
+                // Guardar o ficheiro
+                File.WriteAllText(Path.Combine(localFicheiro, nomeFicheiro), Texto.Text, Encoding.UTF8);
+
+                // Mudar o título da janela para o nome do ficheiro
+                this.Text = nomeFicheiro + " - Notepad";
+            }
+        }
+
+        /// <summary>
+        /// Guardar o ficheiro atual especificando um nome e localização.
+        /// </summary>
+        private void GuardarComo()
+        {
+            saveFileDialog1.Title = "Guardar como";
+            saveFileDialog1.Filter = "Ficheiros de texto (*.txt)|*.txt|Todos os ficheiros (*.*)|*.*";
+            saveFileDialog1.FilterIndex = 0;
+            saveFileDialog1.DefaultExt = "txt";
+
+            // Verificar que a localização especificada pelo utilizador existe
+            saveFileDialog1.CheckPathExists = true;
+
+            // Ir para a diretoria do ficheiro (se existir uma localização de ficheiro)
+            if (localFicheiro != string.Empty)
+            {
+                saveFileDialog1.InitialDirectory = localFicheiro;
+            }
+
+            // Especificar o nome do ficheiro
+            saveFileDialog1.FileName = nomeFicheiro;
+
+            // Mostrar o SaveFileDialog e verificar o resultado da operação
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                // Armazenar o nome e a localização na qual o ficheiro foi gravado
+                nomeFicheiro = Path.GetFileName(saveFileDialog1.FileName);
+                localFicheiro = Path.GetDirectoryName(saveFileDialog1.FileName);
+
+                // Mudar o título da janela para o nome do ficheiro
+                this.Text = nomeFicheiro + " - Notepad";
+
+                // Gravar o conteúdo do ficheiro
+                File.WriteAllText(saveFileDialog1.FileName, Texto.Text, Encoding.UTF8);
+            }
+        }
+
+        /// <summary>
         /// Terminar a aplicação.
         /// </summary>
         private void MenuFormSair_Click(object sender, EventArgs e)

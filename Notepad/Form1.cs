@@ -23,6 +23,18 @@ namespace Notepad
         }
 
         /// <summary>
+        /// Criar um novo ficheiro.
+        /// </summary>
+        private void MenuFormNovo_Click(object sender, EventArgs e)
+        {
+            // Eliminar o conteúdo da caixa de texto
+            Texto.Text = string.Empty;
+
+            // Inicialmente o novo ficheiro não tem nome
+            this.Text = "Sem título - Notepad";
+        }
+
+        /// <summary>
         /// Terminar a aplicação.
         /// </summary>
         private void MenuFormSair_Click(object sender, EventArgs e)

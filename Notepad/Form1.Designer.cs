@@ -72,6 +72,7 @@
             this.MenuFormNovo.Name = "MenuFormNovo";
             this.MenuFormNovo.Size = new System.Drawing.Size(180, 22);
             this.MenuFormNovo.Text = "&Novo";
+            this.MenuFormNovo.Click += new System.EventHandler(this.MenuFormNovo_Click);
             // 
             // MenuFormAbrir
             // 

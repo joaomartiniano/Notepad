@@ -12,6 +12,17 @@ namespace Notepad
 {
     public partial class Form1 : Form
     {
+
+        /// <summary>
+        /// O nome do ficheiro em edição.
+        /// </summary>
+        private string nomeFicheiro = string.Empty;
+
+        /// <summary>
+        /// A localização do ficheiro em edição.
+        /// </summary>
+        private string localFicheiro = string.Empty;
+
         public Form1()
         {
             InitializeComponent();

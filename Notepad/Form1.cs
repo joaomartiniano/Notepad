@@ -46,6 +46,40 @@ namespace Notepad
         }
 
         /// <summary>
+        /// Abrir um novo ficheiro.
+        /// </summary>
+        private void MenuFormAbrir_Click(object sender, EventArgs e)
+        {
+            // Título
+            openFileDialog1.Title = "Abrir";
+            // Permitir selecionar apenas um ficheiro
+            openFileDialog1.Multiselect = false;
+            // Tipos de ficheiros que podem ser abertos
+            openFileDialog1.Filter = "Ficheiros de texto (*.txt)|*.txt|Todos os ficheiros (*.*)|*.*";
+            openFileDialog1.FilterIndex = 0;
+
+            // Verificar que o nome e a localização especificadas pelo utilizador existem
+            openFileDialog1.CheckFileExists = true;
+            openFileDialog1.CheckPathExists = true;
+
+            openFileDialog1.FileName = string.Empty;
+
+            // Mostrar o OpenFileDialog e verificar o resultado da operação
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                // Armazenar o nome e a localização do novo ficheiro
+                nomeFicheiro = Path.GetFileName(openFileDialog1.FileName);
+                localFicheiro = Path.GetDirectoryName(openFileDialog1.FileName);
+
+                // Mudar o título da janela para o nome do ficheiro
+                this.Text = nomeFicheiro + " - Notepad";
+
+                // Abrir o ficheiro e colocar o conteúdo na caixa de texto
+                Texto.Text = File.ReadAllText(openFileDialog1.FileName, Encoding.UTF8);
+            }
+        }
+
+        /// <summary>
         /// Terminar a aplicação.
         /// </summary>
         private void MenuFormSair_Click(object sender, EventArgs e)

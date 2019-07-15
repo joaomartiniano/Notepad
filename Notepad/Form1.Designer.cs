@@ -81,6 +81,7 @@
             this.MenuFormAbrir.Name = "MenuFormAbrir";
             this.MenuFormAbrir.Size = new System.Drawing.Size(180, 22);
             this.MenuFormAbrir.Text = "&Abrir...";
+            this.MenuFormAbrir.Click += new System.EventHandler(this.MenuFormAbrir_Click);
             // 
             // MenuFormGuardar
             // 

@@ -21,5 +21,13 @@ namespace Notepad
         {
             this.Text = "Sem Título - Notepad";
         }
+
+        /// <summary>
+        /// Terminar a aplicação.
+        /// </summary>
+        private void MenuFormSair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -6,8 +6,9 @@ Clone da aplicação Bloco de Notas do Windows.
 
 ## Descrição
 
-Notepad é um aplicação simples, escrita na linguagem C#.
-Foi desenvolvida com o intuito de auxiliar a lecionação da linguagem de programação C#.
+Notepad é uma aplicação simples, escrita na linguagem C#.
+
+Foi desenvolvida com o intuito de auxiliar na lecionação da linguagem de programação C#.
 
 ## Licença
 

@@ -15,5 +15,13 @@ namespace Notepad
         {
             InitializeComponent();
         }
+
+        /// <summary>
+        /// Fechar esta janela.
+        /// </summary>
+        private void BtFechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

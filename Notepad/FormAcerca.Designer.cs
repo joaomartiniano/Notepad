@@ -95,6 +95,7 @@
             this.BtFechar.TabIndex = 5;
             this.BtFechar.Text = "Fechar";
             this.BtFechar.UseVisualStyleBackColor = true;
+            this.BtFechar.Click += new System.EventHandler(this.BtFechar_Click);
             // 
             // FormAcerca
             // 

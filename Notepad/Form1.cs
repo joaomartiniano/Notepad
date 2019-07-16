@@ -31,6 +31,11 @@ namespace Notepad
         private void Form1_Load(object sender, EventArgs e)
         {
             this.Text = "Sem Título - Notepad";
+
+            // Inicializar a opção Word Wrap
+            Texto.WordWrap = true;
+            // Assinalar na opção do menu Formatar, inserindo um checkmark, que a opção Word Wrap está ativa
+            MenuFormWordWrap.Checked = true;
         }
 
         /// <summary>
@@ -170,6 +175,7 @@ namespace Notepad
             FormAcerca frmAcercaNotepad = new FormAcerca();
 
             frmAcercaNotepad.ShowDialog();
+
             frmAcercaNotepad.Dispose();
         }
     }

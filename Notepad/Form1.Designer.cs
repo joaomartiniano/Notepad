@@ -42,6 +42,9 @@
             this.Texto = new System.Windows.Forms.TextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.formatarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuFormWordWrap = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuFormFonte = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,6 +52,7 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ficheiroToolStripMenuItem,
+            this.formatarToolStripMenuItem,
             this.ajudaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -142,6 +146,27 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // formatarToolStripMenuItem
+            // 
+            this.formatarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MenuFormWordWrap,
+            this.MenuFormFonte});
+            this.formatarToolStripMenuItem.Name = "formatarToolStripMenuItem";
+            this.formatarToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
+            this.formatarToolStripMenuItem.Text = "&Formatar";
+            // 
+            // MenuFormWordWrap
+            // 
+            this.MenuFormWordWrap.Name = "MenuFormWordWrap";
+            this.MenuFormWordWrap.Size = new System.Drawing.Size(180, 22);
+            this.MenuFormWordWrap.Text = "&Word Wrap";
+            // 
+            // MenuFormFonte
+            // 
+            this.MenuFormFonte.Name = "MenuFormFonte";
+            this.MenuFormFonte.Size = new System.Drawing.Size(180, 22);
+            this.MenuFormFonte.Text = "&Fonte...";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -178,6 +203,9 @@
         private System.Windows.Forms.TextBox Texto;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.ToolStripMenuItem formatarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem MenuFormWordWrap;
+        private System.Windows.Forms.ToolStripMenuItem MenuFormFonte;
     }
 }
 

@@ -168,6 +168,18 @@ namespace Notepad
         }
 
         /// <summary>
+        /// Ligar/desligar word wrap na caixa de texto.
+        /// </summary>
+        private void MenuFormWordWrap_Click(object sender, EventArgs e)
+        {
+            // Atribuir à propriedade WordWrap o valor contrário ao que tem neste momento
+            Texto.WordWrap = !Texto.WordWrap;
+
+            // Mostrar/esconder uma checkmark consoante o valor da propriedade WordWrap
+            MenuFormWordWrap.Checked = Texto.WordWrap;
+        }
+
+        /// <summary>
         /// Mostrar informações acerca desta aplicação.
         /// </summary>
         private void MenuFormAcerca_Click(object sender, EventArgs e)

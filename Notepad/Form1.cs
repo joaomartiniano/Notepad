@@ -161,5 +161,16 @@ namespace Notepad
         {
             Application.Exit();
         }
+
+        /// <summary>
+        /// Mostrar informações acerca desta aplicação.
+        /// </summary>
+        private void MenuFormAcerca_Click(object sender, EventArgs e)
+        {
+            FormAcerca frmAcercaNotepad = new FormAcerca();
+
+            frmAcercaNotepad.ShowDialog();
+            frmAcercaNotepad.Dispose();
+        }
     }
 }

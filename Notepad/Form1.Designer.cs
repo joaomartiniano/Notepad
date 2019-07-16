@@ -72,40 +72,40 @@
             // MenuFormNovo
             // 
             this.MenuFormNovo.Name = "MenuFormNovo";
-            this.MenuFormNovo.Size = new System.Drawing.Size(180, 22);
+            this.MenuFormNovo.Size = new System.Drawing.Size(161, 22);
             this.MenuFormNovo.Text = "&Novo";
             this.MenuFormNovo.Click += new System.EventHandler(this.MenuFormNovo_Click);
             // 
             // MenuFormAbrir
             // 
             this.MenuFormAbrir.Name = "MenuFormAbrir";
-            this.MenuFormAbrir.Size = new System.Drawing.Size(180, 22);
+            this.MenuFormAbrir.Size = new System.Drawing.Size(161, 22);
             this.MenuFormAbrir.Text = "&Abrir...";
             this.MenuFormAbrir.Click += new System.EventHandler(this.MenuFormAbrir_Click);
             // 
             // MenuFormGuardar
             // 
             this.MenuFormGuardar.Name = "MenuFormGuardar";
-            this.MenuFormGuardar.Size = new System.Drawing.Size(180, 22);
+            this.MenuFormGuardar.Size = new System.Drawing.Size(161, 22);
             this.MenuFormGuardar.Text = "&Guardar";
             this.MenuFormGuardar.Click += new System.EventHandler(this.MenuFormGuardar_Click);
             // 
             // MenuFormGuardarComo
             // 
             this.MenuFormGuardarComo.Name = "MenuFormGuardarComo";
-            this.MenuFormGuardarComo.Size = new System.Drawing.Size(180, 22);
+            this.MenuFormGuardarComo.Size = new System.Drawing.Size(161, 22);
             this.MenuFormGuardarComo.Text = "Guardar &Como...";
             this.MenuFormGuardarComo.Click += new System.EventHandler(this.MenuFormGuardarComo_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(158, 6);
             // 
             // MenuFormSair
             // 
             this.MenuFormSair.Name = "MenuFormSair";
-            this.MenuFormSair.Size = new System.Drawing.Size(180, 22);
+            this.MenuFormSair.Size = new System.Drawing.Size(161, 22);
             this.MenuFormSair.Text = "&Sair";
             this.MenuFormSair.Click += new System.EventHandler(this.MenuFormSair_Click);
             // 
@@ -120,8 +120,9 @@
             // MenuFormAcerca
             // 
             this.MenuFormAcerca.Name = "MenuFormAcerca";
-            this.MenuFormAcerca.Size = new System.Drawing.Size(176, 22);
+            this.MenuFormAcerca.Size = new System.Drawing.Size(180, 22);
             this.MenuFormAcerca.Text = "&Acerca do Notepad";
+            this.MenuFormAcerca.Click += new System.EventHandler(this.MenuFormAcerca_Click);
             // 
             // Texto
             // 

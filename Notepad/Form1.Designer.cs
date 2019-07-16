@@ -168,6 +168,7 @@
             this.MenuFormFonte.Name = "MenuFormFonte";
             this.MenuFormFonte.Size = new System.Drawing.Size(180, 22);
             this.MenuFormFonte.Text = "&Fonte...";
+            this.MenuFormFonte.Click += new System.EventHandler(this.MenuFormFonte_Click);
             // 
             // Form1
             // 

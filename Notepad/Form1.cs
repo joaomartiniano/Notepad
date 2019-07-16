@@ -180,6 +180,26 @@ namespace Notepad
         }
 
         /// <summary>
+        // Mostrar ao utilizador uma caixa de diálogo para escolher o tipo de letra.
+        /// </summary>
+        private void MenuFormFonte_Click(object sender, EventArgs e)
+        {
+            // Inicializar a fonte e a cor do texto
+            fontDialog1.Font = Texto.Font;
+            fontDialog1.Color = Texto.ForeColor;
+
+            // Permitir que o utilizador selecione a cor do texto
+            fontDialog1.ShowColor = true;
+
+            if (fontDialog1.ShowDialog() == DialogResult.OK)
+            {
+                // Modificar a fonte e a cor da caixa de texto
+                Texto.Font = fontDialog1.Font;
+                Texto.ForeColor = fontDialog1.Color;
+            }
+        }
+
+        /// <summary>
         /// Mostrar informações acerca desta aplicação.
         /// </summary>
         private void MenuFormAcerca_Click(object sender, EventArgs e)

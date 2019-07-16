@@ -45,6 +45,7 @@
             this.formatarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuFormWordWrap = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuFormFonte = new System.Windows.Forms.ToolStripMenuItem();
+            this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -207,6 +208,7 @@
         private System.Windows.Forms.ToolStripMenuItem formatarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem MenuFormWordWrap;
         private System.Windows.Forms.ToolStripMenuItem MenuFormFonte;
+        private System.Windows.Forms.FontDialog fontDialog1;
     }
 }
 

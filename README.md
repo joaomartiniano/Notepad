@@ -1,4 +1,4 @@
-# <img src="Notepad.png" alt=""> Notepad
+# <img src="Notepad.png" alt=""> NOTEPAD
 
 Clone da aplicação Bloco de Notas do Windows.
 
@@ -8,3 +8,7 @@ Clone da aplicação Bloco de Notas do Windows.
 
 Notepad é um aplicação simples, escrita na linguagem C#.
 Foi desenvolvida com o intuito de auxiliar a lecionação da linguagem de programação C#.
+
+## Licença
+
+MIT

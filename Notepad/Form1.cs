@@ -209,7 +209,6 @@ namespace Notepad
             FormAcerca frmAcercaNotepad = new FormAcerca();
 
             frmAcercaNotepad.ShowDialog();
-
             frmAcercaNotepad.Dispose();
         }
     }

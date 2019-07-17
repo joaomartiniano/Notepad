@@ -99,8 +99,6 @@ namespace Notepad
         /// <summary>
         /// Guardar o ficheiro atual, especificando um nome e localização.
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void MenuFormGuardarComo_Click(object sender, EventArgs e)
         {
             GuardarComo();

@@ -46,6 +46,10 @@ namespace Notepad
             // Eliminar o conteúdo da caixa de texto
             Texto.Text = string.Empty;
 
+            // Efetuar reset às informações do ficheiro
+            nomeFicheiro = string.Empty;
+            localFicheiro = string.Empty;
+
             // Inicialmente o novo ficheiro não tem nome
             this.Text = "Sem título - Notepad";
         }

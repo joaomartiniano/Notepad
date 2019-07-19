@@ -52,10 +52,28 @@ namespace Notepad
         /// </summary>
         private void MenuFormNovo_Click(object sender, EventArgs e)
         {
+            // Se o ficheiro foi modificado e não gravado, informar o utilizador
+            if (textoModificado)
+            {
+                DialogResult resultado = MessageBox.Show("O ficheiro foi modificado. Deseja gravar?", "Notepad", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+
+                if (resultado == DialogResult.Yes)
+                {
+                    // Guardar o ficheiro
+                    Guardar();
+                }
+                else if (resultado == DialogResult.Cancel)
+                {
+                    // Cancelar a operação de criação de novo ficheiro
+                    return;
+                }
+            }
+
             // Eliminar o conteúdo da caixa de texto
             Texto.Text = string.Empty;
 
             // Limpar as informações do ficheiro
+            textoModificado = false;
             nomeFicheiro = string.Empty;
             localFicheiro = string.Empty;
 

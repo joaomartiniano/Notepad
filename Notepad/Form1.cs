@@ -12,7 +12,6 @@ namespace Notepad
 {
     public partial class Form1 : Form
     {
-
         /// <summary>
         /// O nome do ficheiro em edição.
         /// </summary>
@@ -22,6 +21,16 @@ namespace Notepad
         /// A localização do ficheiro em edição.
         /// </summary>
         private string localFicheiro = string.Empty;
+
+        /// <summary>
+        /// Indica se um ficheiro foi modificado desde a última vez que foi gravado.
+        /// </summary>
+        private bool textoModificado = false;
+
+        /// <summary>
+        /// Indica se o ficheiro é um novo ficheiro. Esta variável é necessária quando é aberto um novo ficheiro.
+        /// </summary>
+        private bool novoFicheiro = false;
 
         public Form1()
         {

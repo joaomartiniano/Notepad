@@ -86,6 +86,23 @@ namespace Notepad
         /// </summary>
         private void MenuFormAbrir_Click(object sender, EventArgs e)
         {
+            // Se o ficheiro foi modificado e não gravado, informar o utilizador
+            if (textoModificado)
+            {
+                DialogResult resultado = MessageBox.Show("O ficheiro foi modificado. Deseja gravar?", "Notepad", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+
+                if (resultado == DialogResult.Yes)
+                {
+                    // Guardar o ficheiro
+                    Guardar();
+                }
+                else if (resultado == DialogResult.Cancel)
+                {
+                    // Cancelar a operação de abertura de novo ficheiro
+                    return;
+                }
+            }
+
             // Título
             openFileDialog1.Title = "Abrir";
             // Permitir selecionar apenas um ficheiro
@@ -112,6 +129,12 @@ namespace Notepad
 
                 // Abrir o ficheiro e colocar o conteúdo na caixa de texto
                 Texto.Text = File.ReadAllText(openFileDialog1.FileName, Encoding.UTF8);
+
+                // Indicar que o ficheiro ainda não foi modificado
+                textoModificado = false;
+
+                // Indicar que foi aberto um novo ficheiro
+                novoFicheiro = true;
             }
         }
 

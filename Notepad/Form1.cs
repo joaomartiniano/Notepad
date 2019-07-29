@@ -221,6 +221,32 @@ namespace Notepad
         }
 
         /// <summary>
+        /// Antes de encerrar a aplicação, verificar se o ficheiro foi modificado.
+        /// </summary>
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            // Se o ficheiro foi modificado e não gravado, informar o utilizador
+            if (textoModificado)
+            {
+                DialogResult resultado = MessageBox.Show("O ficheiro foi modificado. Deseja gravar?", "Notepad", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+
+                if (resultado == DialogResult.Yes)
+                {
+                    // Guardar o ficheiro
+                    Guardar();
+                }
+                else if (resultado == DialogResult.Cancel)
+                {
+                    // Cancelar o encerramento da aplicação
+                    e.Cancel = true;
+                    return;
+                }
+            }
+
+            e.Cancel = false;
+        }
+
+        /// <summary>
         /// Terminar a aplicação.
         /// </summary>
         private void MenuFormSair_Click(object sender, EventArgs e)

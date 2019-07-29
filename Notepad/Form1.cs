@@ -171,6 +171,9 @@ namespace Notepad
 
                 // Mudar o título da janela para o nome do ficheiro
                 this.Text = nomeFicheiro + " - Notepad";
+
+                // Indicar que não ocorreu modificação desde a última gravação
+                textoModificado = false;
             }
         }
 
@@ -208,6 +211,9 @@ namespace Notepad
 
                 // Gravar o conteúdo do ficheiro
                 File.WriteAllText(saveFileDialog1.FileName, Texto.Text, Encoding.UTF8);
+
+                // Indicar que não ocorreu modificação desde a última gravação
+                textoModificado = false;
             }
         }
 

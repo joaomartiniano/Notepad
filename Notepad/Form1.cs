@@ -267,5 +267,13 @@ namespace Notepad
             frmAcercaNotepad.ShowDialog();
             frmAcercaNotepad.Dispose();
         }
+
+        /// <summary>
+        /// Este evento é executado sempre que o texto é modificado no controlo Texto.
+        /// </summary>
+        private void Texto_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

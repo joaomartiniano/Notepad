@@ -37,14 +37,14 @@
             this.MenuFormGuardarComo = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.MenuFormSair = new System.Windows.Forms.ToolStripMenuItem();
+            this.formatarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuFormWordWrap = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuFormFonte = new System.Windows.Forms.ToolStripMenuItem();
             this.ajudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuFormAcerca = new System.Windows.Forms.ToolStripMenuItem();
             this.Texto = new System.Windows.Forms.TextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.formatarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.MenuFormWordWrap = new System.Windows.Forms.ToolStripMenuItem();
-            this.MenuFormFonte = new System.Windows.Forms.ToolStripMenuItem();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -114,6 +114,29 @@
             this.MenuFormSair.Text = "&Sair";
             this.MenuFormSair.Click += new System.EventHandler(this.MenuFormSair_Click);
             // 
+            // formatarToolStripMenuItem
+            // 
+            this.formatarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MenuFormWordWrap,
+            this.MenuFormFonte});
+            this.formatarToolStripMenuItem.Name = "formatarToolStripMenuItem";
+            this.formatarToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
+            this.formatarToolStripMenuItem.Text = "&Formatar";
+            // 
+            // MenuFormWordWrap
+            // 
+            this.MenuFormWordWrap.Name = "MenuFormWordWrap";
+            this.MenuFormWordWrap.Size = new System.Drawing.Size(134, 22);
+            this.MenuFormWordWrap.Text = "&Word Wrap";
+            this.MenuFormWordWrap.Click += new System.EventHandler(this.MenuFormWordWrap_Click);
+            // 
+            // MenuFormFonte
+            // 
+            this.MenuFormFonte.Name = "MenuFormFonte";
+            this.MenuFormFonte.Size = new System.Drawing.Size(134, 22);
+            this.MenuFormFonte.Text = "&Fonte...";
+            this.MenuFormFonte.Click += new System.EventHandler(this.MenuFormFonte_Click);
+            // 
             // ajudaToolStripMenuItem
             // 
             this.ajudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -125,7 +148,7 @@
             // MenuFormAcerca
             // 
             this.MenuFormAcerca.Name = "MenuFormAcerca";
-            this.MenuFormAcerca.Size = new System.Drawing.Size(180, 22);
+            this.MenuFormAcerca.Size = new System.Drawing.Size(176, 22);
             this.MenuFormAcerca.Text = "&Acerca do Notepad";
             this.MenuFormAcerca.Click += new System.EventHandler(this.MenuFormAcerca_Click);
             // 
@@ -142,33 +165,11 @@
             this.Texto.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.Texto.Size = new System.Drawing.Size(584, 187);
             this.Texto.TabIndex = 1;
+            this.Texto.TextChanged += new System.EventHandler(this.Texto_TextChanged);
             // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // formatarToolStripMenuItem
-            // 
-            this.formatarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.MenuFormWordWrap,
-            this.MenuFormFonte});
-            this.formatarToolStripMenuItem.Name = "formatarToolStripMenuItem";
-            this.formatarToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
-            this.formatarToolStripMenuItem.Text = "&Formatar";
-            // 
-            // MenuFormWordWrap
-            // 
-            this.MenuFormWordWrap.Name = "MenuFormWordWrap";
-            this.MenuFormWordWrap.Size = new System.Drawing.Size(180, 22);
-            this.MenuFormWordWrap.Text = "&Word Wrap";
-            this.MenuFormWordWrap.Click += new System.EventHandler(this.MenuFormWordWrap_Click);
-            // 
-            // MenuFormFonte
-            // 
-            this.MenuFormFonte.Name = "MenuFormFonte";
-            this.MenuFormFonte.Size = new System.Drawing.Size(180, 22);
-            this.MenuFormFonte.Text = "&Fonte...";
-            this.MenuFormFonte.Click += new System.EventHandler(this.MenuFormFonte_Click);
             // 
             // Form1
             // 

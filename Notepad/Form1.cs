@@ -273,10 +273,7 @@ namespace Notepad
         /// </summary>
         private void Texto_TextChanged(object sender, EventArgs e)
         {
-            /* Verificar se um ficheiro acabou de ser aberto:
-             * neste caso não executar o código que normalmente é executado quando o conteúdo da caixa
-             * de texto é modificado
-             * */
+            // Apenas acrescentar o carater '*' ao título da aplicação se não tiver sido criado ou aberto um novo ficheiro
             if (!novoFicheiro)
             {
                 // Mudar o título da janela uma única vez (apenas quando ocorre a modificação pela primeira vez)

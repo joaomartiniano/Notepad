@@ -127,14 +127,14 @@ namespace Notepad
                 // Mudar o título da janela para o nome do ficheiro
                 this.Text = nomeFicheiro + " - Notepad";
 
-                // Abrir o ficheiro e colocar o conteúdo na caixa de texto
-                Texto.Text = File.ReadAllText(openFileDialog1.FileName, Encoding.UTF8);
-
                 // Indicar que o ficheiro ainda não foi modificado
                 textoModificado = false;
 
                 // Indicar que foi aberto um novo ficheiro
                 novoFicheiro = true;
+
+                // Abrir o ficheiro e colocar o conteúdo na caixa de texto
+                Texto.Text = File.ReadAllText(openFileDialog1.FileName, Encoding.UTF8);
             }
         }
 

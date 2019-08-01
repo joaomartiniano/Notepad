@@ -32,14 +32,14 @@ O professor pode modificar o código para:
 ## Como utilizar
 
 Em primeiro lugar, para obter o código:
-- se utilizar o Git, pode clonar este repositório
+- se utilizar o <a href="https://git-scm.com/">Git</a>, pode clonar este repositório
 - em alternativa, pode efetuar download do repositório em formato ZIP e descompactar no seu computador
 
 <img src="download-repositorio.gif" alt="Efetuar download do repositório">
 
-Este projeto foi desenvolvido utilizando as versãos 2017 e 2019 do Visual Studio Community Edition. No entanto deverá compilar sem problemas com versões anteriores do Visual Studio (não testei).
+Este projeto foi desenvolvido utilizando as versãos 2017 e 2019 do <a href="https://visualstudio.microsoft.com/vs/community/">Visual Studio Community Edition</a>. No entanto deverá compilar sem problemas com versões anteriores do Visual Studio (não testei).
 
-Necessita da .Net Framework 4.0 instalada no computador.
+Necessita da <a href="https://www.microsoft.com/pt-pt/download/details.aspx?id=17851">.NET Framework 4.0</a> instalada no computador.
 
 ## Licença
 

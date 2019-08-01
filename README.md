@@ -11,7 +11,7 @@ Clone da aplicação Bloco de Notas do Windows.
 Foi desenvolvida com o intuito de auxiliar na lecionação da linguagem de programação C#.
 
 A acompanhar esta aplicação é fornecido o enunciado de uma ficha de trabalho (formato DOCX e PDF):
-- <a href="Documentos/Ficha de Trabalho Notepad.docx" download>Ficha de trabalho (formato DOCX)</a>
+- <a href="Notepad/Ficha de Trabalho Notepad.docx" download>Ficha de trabalho (formato DOCX)</a>
 - <a href="Documentos/Ficha de Trabalho Notepad.pdf" download>Ficha de trabalho (formato PDF)</a>
 
 O enunciado contém as instruções necessárias para o desenvolvimento da aplicação, divididas em 4 grupos:
